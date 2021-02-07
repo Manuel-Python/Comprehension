@@ -16,3 +16,6 @@ short_names = [name for name in names if len(name) < 5]
 long_names = [name.upper() for name in names if len(name) > 4]
 print(short_names)
 print(long_names)
+
+in_names = [name for name in names if "dd" in name]
+print(in_names)
