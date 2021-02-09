@@ -19,3 +19,10 @@ print(long_names)
 
 in_names = [name for name in names if "dd" in name]
 print(in_names)
+
+numbers = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+squared_nums = [n * n for n in numbers]
+print(squared_nums)
+
+even_nums = [n for n in numbers if n % 2 == 0]
+print(even_nums)
