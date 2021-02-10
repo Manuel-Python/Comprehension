@@ -51,3 +51,6 @@ print(nums2)
 dif_nums = [n for n in nums1 if n in nums2]
 
 print(dif_nums)
+
+product_nums = [n * n for n in nums1 if n in nums2]
+print(product_nums)
