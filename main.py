@@ -1,3 +1,5 @@
+import random
+
 numbers = [1, 2, 3]
 # new_numbers = [new_item for item in list]
 new_numbers = [n + 1 for n in numbers]
@@ -54,3 +56,15 @@ print(dif_nums)
 
 product_nums = [n * n for n in nums1 if n in nums2]
 print(product_nums)
+
+print("*" * 80)
+
+# new_dict =  {new_key:new_value for item in list}
+# new_dict = { new_key:new_value for (key,value) in dict.items()}
+
+names1 = ["Alex", "Beth", "Caroline", "Dave", "Eleanor", "Freddie"]
+students_scores = {student: random.randint(1, 100) for student in names1}
+print(students_scores)
+
+passed_students = {student: score for (student, score) in students_scores.items() if score > 50}
+print(passed_students)
