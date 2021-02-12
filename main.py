@@ -68,3 +68,6 @@ print(students_scores)
 
 passed_students = {student: score for (student, score) in students_scores.items() if score > 50}
 print(passed_students)
+
+student_len = {student: score * 0.5 for (student, score) in students_scores.items() if len(student) > 4}
+print(student_len)
