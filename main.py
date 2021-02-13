@@ -1,5 +1,7 @@
 import random
 
+import pandas
+
 numbers = [1, 2, 3]
 # new_numbers = [new_item for item in list]
 new_numbers = [n + 1 for n in numbers]
@@ -71,3 +73,24 @@ print(passed_students)
 
 student_len = {student: score * 0.5 for (student, score) in students_scores.items() if len(student) > 4}
 print(student_len)
+
+student_dict = {
+    "students": ["Amy", "James", "Angela"],
+    "scores": [76, 56, 65]
+}
+
+for (key, value) in student_dict.items():
+    print(value)
+
+student_data_frame = pandas.DataFrame(student_dict)
+print(student_data_frame)
+
+# Loop through a data frame
+for (key, value) in student_data_frame.items():
+    print(value)
+
+# Loop through rows of a data frame
+for (index, row) in student_data_frame.iterrows():
+    # print(row.students)
+    if row.students == "Angela":
+        print(row.scores)
